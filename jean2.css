@@ -48,7 +48,7 @@ html{
     text-align: center;
     z-index: 1;
     color: black;
-    font-size: 5rem;
+    font-size: 3rem;
     
 }
 .btn-saibamais{
@@ -56,7 +56,7 @@ html{
     text-decoration: none;
     border-radius: 1rem;
     background-color: rgb(255, 255, 0);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 
 }
 .main-haider{
@@ -67,7 +67,7 @@ html{
     background-color: rgba(0, 0, 0, 0.904);
    overflow: hidden;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: var(--font-text--);
 
 }
@@ -105,6 +105,7 @@ html{
     object-fit: cover;
     opacity: .4;
     transition: all .4s;
+
 }
 .card h1 {
 
@@ -125,3 +126,17 @@ html{
         transform: scale(1.8);
     }
 }
+@media(max-width:500px){
+    .main-haider{
+        
+        height: 120rem;
+        
+    }
+    .section-main{
+        flex-direction: column;
+        height: 120rem;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
