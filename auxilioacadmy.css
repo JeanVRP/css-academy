@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200;1,400&display=swap");
+
+:root {
+  --font-text--: "Raleway";
+}
+
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgba(39, 36, 36, 0.884);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(24, 24, 172);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: var(--font-text--);
+}
+
+.container-header {
+  position: relative;
+  width: 100%;
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.img-header {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  filter: blur(4px);
+  animation: animation-header-img 5s infinite;
+}
+
+.descricao-header {
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 4rem;
+  animation: animation-names 2.4s;
+}
+@keyframes animation-names {
+  from {
+    opacity: 0;
+
+    transform: skewY(60deg) translateY(-100rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn-saibamais {
+  color: black;
+  display: block;
+  margin-top: 5rem;
+  width: 13rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: rgb(24, 24, 172);
+  font-size: 2rem;
+}
+
+.main-haider {
+  color: rgb(24, 24, 172);
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.904);
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: var(--font-text--);
+}
+
+.section-sobre-nos {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.div-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+}
+
+.div-section h1 {
+  display: flex;
+  align-items: center;
+  margin-top: 10rem;
+  justify-content: center;
+  font-size: 4rem;
+  padding: 2rem;
+  color: rgb(24, 24, 172);
+}
+
+.div-section p {
+  font-size: 2rem;
+  color: white;
+}
+.btn-saiba-mais {
+  height: 4rem;
+  width: 9rem;
+  display: flex;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  background-color: rgb(24, 24, 172);
+}
+
+.sobre-nos-img img {
+  height: 50rem;
+  width: 60rem;
+  padding: 5rem;
+}
+.sobre-nos-img:hover {
+  transform: scale(1.1);
+  filter: blur(1px);
+}
+
+.o-que-oferecemos {
+  padding: 5rem;
+  font-size: 2rem;
+}
+.o-que-oferecemos p {
+  padding: 2rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.section-main {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  width: 20rem;
+  height: 30rem;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  cursor: pointer;
+  color: white  ;
+}
+
+.card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  transition: all 0.4s;
+}
+
+.card h1 {
+  z-index: 1;
+  font-size: 1em;
+}
+
+.card:hover img {
+  transform: scale(1.3);
+  filter: blur(3px);
+}
+
+@keyframes animation-header-img {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.8);
+  }
+}
+
+@media (max-width: 500px) {
+  .main-haider {
+    height: 130rem;
+  }
+  .section-main {
+    flex-direction: column;
+    height: 120rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.entre-em-contato {
+  position: relative;
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  justify-content: center;
+  font-family: var(--font-text--);
+  overflow: hidden;
+  
+}
+.entre-em-contato img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  filter: blur(4px);
+}
+.entre-em-contato-h1 {
+    color: white;
+  text-align: left;
+  display: flex;
+  z-index: 1;
+  margin-left: 4rem;
+  font-size: 5rem;
+}
+
+.footer {
+  display: flex;
+  background-color: rgba(24, 24, 172, 0.829);
+  color: black;
+  height: 10rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-footer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  align-items: center;
+  gap: 25rem;
+}
+.div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.div h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  border-bottom-style: inset;
+  border-color: #000;
+}
+.div p {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.div i {
+  font-size: 2rem;
+}
